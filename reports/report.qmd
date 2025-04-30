@@ -2,7 +2,7 @@
 title: Homework 8 - World Bank Analysis
 ---
 
-GITHUB URL:  <https://github.com/cmsc-vcu/cmsc408-sp2025-hw8-jleonard99>
+GITHUB URL:  <https://github.com/cmsc-vcu/cmsc408-sp2025-hw8-RobertDuncan1>
 
 
 # Problem Background
@@ -91,7 +91,10 @@ List all non-countries.
 ## (skills: select, where)
 
 run_sql_and_return_html(cnx,"""
-select "doh!" as "Homer says ..." from dual
+select
+  count(*) as "Row Count"
+from
+  world_bank_data.wdi_country
 """)
 ```
 
@@ -116,13 +119,17 @@ drop table if exists wdi_country;
 ```{python}
 # create table
 execute_ddl(cnx,"""
+create table WDI_Country
 """)
 ```
 
 ```{python}
 # show number of records
 run_sql_and_return_html(cnx,"""
-select "doh!" as "Homer says ..." from dual
+select
+  count(*) as "Row Count"
+from
+  world_bank_data.wdi_country
 """)
 ```
 
@@ -134,7 +141,10 @@ According to the World Bank, in 2020 there were how many countries in the world?
 ## (skills: select, aggregate)
 
 run_sql_and_return_html(cnx,"""
-select "doh!" as "Homer says ..." from dual
+select
+  count(*) as "Row Count"
+from
+  world_bank_data.wdi_country
 """)
 
 ```
@@ -151,7 +161,10 @@ What are all unique values of region in the wdi_country table?
 ## (skills: select, aggregate, order by)
 
 run_sql_and_return_html(cnx,"""
-select "doh!" as "Homer says ..." from dual
+select
+  count(*) as "Row Count"
+from
+  world_bank_data.wdi_country
 """)
 
 ```
@@ -165,7 +178,10 @@ How many countries are in each region?
 ## (skills: select, aggregate, group by, order by)
 
 run_sql_and_return_html(cnx,"""
-select "doh!" as "Homer says ..." from dual
+select
+  count(*) as "Row Count"
+from
+  world_bank_data.wdi_country
 """)
 
 ```
@@ -179,7 +195,10 @@ List the country full names and regions for all countries in north america.
 ## (skills: select, where, order by)
 
 run_sql_and_return_html(cnx,"""
-select "doh!" as "Homer says ..." from dual
+select
+  count(*) as "Row Count"
+from
+  world_bank_data.wdi_country
 """)
 
 ```
@@ -192,7 +211,10 @@ select "doh!" as "Homer says ..." from dual
 ## (skills: select, where)
 
 run_sql_and_return_html(cnx,"""
-select "doh!" as "Homer says ..." from dual
+select
+  count(*) as "Row Count"
+from
+  world_bank_data.wdi_country
 """)
 
 ```
@@ -206,7 +228,10 @@ select "doh!" as "Homer says ..." from dual
 ## (skills: select, where, order by)
 
 run_sql_and_return_html(cnx,"""
-select "doh!" as "Homer says ..." from dual
+select
+  count(*) as "Row Count"
+from
+  world_bank_data.wdi_country
 """)
 
 ```
@@ -220,7 +245,10 @@ select "doh!" as "Homer says ..." from dual
 ## (skills: select, aggregate, group by, order by)
 
 run_sql_and_return_html(cnx,"""
-select "doh!" as "Homer says ..." from dual
+select
+  count(*) as "Row Count"
+from
+  world_bank_data.wdi_country
 """)
 
 ```
@@ -235,7 +263,10 @@ select "doh!" as "Homer says ..." from dual
 ## in the first column.
 
 run_sql_and_return_html(cnx,"""
-select "doh!" as "Homer says ..." from dual
+select
+  count(*) as "Row Count"
+from
+  world_bank_data.wdi_country
 """)
 
 ```
@@ -248,7 +279,11 @@ select "doh!" as "Homer says ..." from dual
 ## Write an update comment to correct the issue.
 ## NOTE - if you get this wrong, all subsequent tables will be wrong!
 
-execute_ddl(cnx,"""
+run_sql_and_return_html(cnx,"""
+select
+  count(*) as "Row Count"
+from
+  world_bank_data.wdi_country
 """)
 
 
@@ -257,7 +292,10 @@ execute_ddl(cnx,"""
 ## Now, display the country again to verify the change stuck!
 
 run_sql_and_return_html(cnx,"""
-select "doh!" as "Homer says ..." from dual
+select
+  count(*) as "Row Count"
+from
+  world_bank_data.wdi_country
 """)
 
 ```
@@ -271,7 +309,10 @@ select "doh!" as "Homer says ..." from dual
 ## (skills: select, aggregate, group by, order by)
 
 run_sql_and_return_html(cnx,"""
-select "doh!" as "Homer says ..." from dual
+select
+  count(*) as "Row Count"
+from
+  world_bank_data.wdi_country
 """)
 
 ```
@@ -292,7 +333,10 @@ select "doh!" as "Homer says ..." from dual
 ## (skills: select, aggregate, group by, nested query)
 
 run_sql_and_return_html(cnx,"""
-select "doh!" as "Homer says ..." from dual
+select
+  count(*) as "Row Count"
+from
+  world_bank_data.wdi_country
 """)
 
 ```
@@ -312,7 +356,10 @@ select "doh!" as "Homer says ..." from dual
 ## (skills: select, aggregate, group by, nested query, order by, limit)
 
 run_sql_and_return_html(cnx,"""
-select "doh!" as "Homer says ..." from dual
+select
+  count(*) as "Row Count"
+from
+  world_bank_data.wdi_country
 """)
 
 ```
@@ -329,7 +376,10 @@ select "doh!" as "Homer says ..." from dual
 ## (skills: select, where, subquery)
 
 run_sql_and_return_html(cnx,"""
-select "doh!" as "Homer says ..." from dual
+select
+  count(*) as "Row Count"
+from
+  world_bank_data.wdi_country
 """)
 
 ```
@@ -354,7 +404,10 @@ select "doh!" as "Homer says ..." from dual
 ## (skills: select, where, subqueries, joins)
 
 run_sql_and_return_html(cnx,"""
-select "doh!" as "Homer says ..." from dual
+select
+  count(*) as "Row Count"
+from
+  world_bank_data.wdi_country
 """)
 
 ```
@@ -378,7 +431,10 @@ select "doh!" as "Homer says ..." from dual
 ## (skills: select, where, subqueries, joins, aggregate functions)
 
 run_sql_and_return_html(cnx,"""
-select "doh!" as "Homer says ..." from dual
+select
+  count(*) as "Row Count"
+from
+  world_bank_data.wdi_country
 """)
 
 
@@ -392,7 +448,10 @@ select "doh!" as "Homer says ..." from dual
 ## columns, Region in the rows and Percent of total in each cell of the table.
 
 run_sql_and_return_html(cnx,"""
-select "doh!" as "Homer says ..." from dual
+select
+  count(*) as "Row Count"
+from
+  world_bank_data.wdi_country
 """)
 
 ```
@@ -407,7 +466,10 @@ select "doh!" as "Homer says ..." from dual
 ## (This is much simpler than task 20!)
 
 run_sql_and_return_html(cnx,"""
-select "doh!" as "Homer says ..." from dual
+select
+  count(*) as "Row Count"
+from
+  world_bank_data.wdi_country
 """)
 
 ```
@@ -417,26 +479,19 @@ select "doh!" as "Homer says ..." from dual
 
 1. Reflect on the SQL skills you used throughout these exercises. Which skills do you feel most confident in, and which do you think need more practice? How has this assignment helped you build or reinforce specific SQL competencies?
 
-( response goes here)
+After completing this assignment, I feel the most confident in using the select and join operators. I think I need more practice with the other operators of SQL. This assignment helped me by showing different ways to get specific pieces of information.
 
 2. Problem-Solving Approach: Describe your approach to tackling the more complex tasks (like Tasks 18, 23, and 24). How did you break down these problems, and what steps did you take when you encountered challenges? How would you approach a similar problem differently in the future?
 
-( response goes here)
+When breaking down the more complex problems, I worked through the designs first before implementing them. I would approach a similar problem differently by preparing more before I start writing my code.
 
 
 3. Learning Takeaways: Consider the overall learning experience from this assignment. What were the biggest takeaways about working with SQL for data analysis and transformation? How do you think these skills will apply in real-world scenarios or future coursework?
 
-( response goes here)
+The biggest takeaways for working with SQL are to reference the database often and plan ahead when thinking of specific queries. These skills will apply in real-world scenarios where I am using a database at my future job.
 
 
 # README
-
-A quality README is an important part of EVERY project. Using the Quarto *include* command we're including a copy of your README in the project report so that a human can evaluate it.
-
-Make sure that you edit the README so that it's explanatory!  Note that you don't need a readme within the *reports* folder for this assignment. We're only
-focused on the root *README.md*.
-
-[Here is some info](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/) on how to write a good README!
 
 ::: {style="background:lightgray; margin-left:20px; border-top: 3px solid black; border-bottom: 3px solid black; padding-left:20px; padding-right:20px"}
 {{< include ../README.md >}}
